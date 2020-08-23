@@ -94,5 +94,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tempest_white_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tempest_square_blue_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tempest_square_blue_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tempest_square_white_transparent.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

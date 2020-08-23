@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tempest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tempest(v1)" Height="450" Width="800" Icon="tempest_square_blue_transparent.png" RenderOptions.BitmapScalingMode="Fant">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="132" Background="#FF334466" Grid.RowSpan="2">
+            <Image Height="50" Source="tempest_white_transparent.png" RenderOptions.BitmapScalingMode="Fant"/>
+            <Button x:Name="Button1" Content="Encode/Decode" Foreground="White" Background="#00000000" BorderBrush="#00000000"/>
+            <Button Content="Brute Force" Foreground="White" Background="#00000000" BorderBrush="#00000000"/>
+        </StackPanel>
+        <Label x:Name="Title" Content="Encode/Decode" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Grid x:Name="EncodePanel" Grid.Column="1" HorizontalAlignment="Left" Height="375" Margin="0,44,0,0" VerticalAlignment="Top" Width="660">
+            <Label Content="Caesar" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox x:Name="EncodeInputBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" VerticalScrollBarVisibility="Auto"/>
+            <Label Content="Step:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="47,66,0,0" TextWrapping="Wrap" Text="13" VerticalAlignment="Top" Width="28"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="80,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="Base64 Encode" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="encodeURL" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="Base64 Decode" HorizontalAlignment="Left" Margin="335,94,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="335,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="decodeURL" HorizontalAlignment="Left" Margin="335,148,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="335,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="ASCII To Hex" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="Hex To ASCII" HorizontalAlignment="Left" Margin="335,202,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="335,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="HTML SpecialChar" HorizontalAlignment="Left" Margin="10,256,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="HTML SpecialChar decode" HorizontalAlignment="Left" Margin="335,256,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="335,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <Label Content="Morse" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Morse Decode" HorizontalAlignment="Left" Margin="335,310,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="335,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+        </Grid>
     </Grid>
 </Window>
